@@ -18,10 +18,16 @@ cd server && npm install
 cd ..
 
 # Run the server
-npm run server
+node server.js
 
-# New terminal window
+# Open a new terminal window
+
+# Create an account
+curl --data "username=hello&password=world&extra=welcome_home" http://localhost:3001/users
+
+# Start React App
 npm start
+
 ```
 
 The app will be served at `localhost:3000`.
